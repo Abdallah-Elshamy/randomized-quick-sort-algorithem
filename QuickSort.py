@@ -26,6 +26,7 @@ def quick_sort(ints_list,begin=0, end=None):
 
 ints = open('QuickSort.txt','r')
 ints_list = list(map(int,ints.read().split('\n')[:-1]))
+ints.close()
 
 quick_sort(ints_list)
 print((ints_list))
